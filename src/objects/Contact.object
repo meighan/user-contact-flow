@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Internal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>True if the Contact is an Internal User Contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if the Contact is an Internal User Contact</inlineHelpText>
+        <label>Internal</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Internal__c = True, HYPERLINK(&apos;/ Matching_User__r.Manager.Internal_Contact__c&apos;, Matching_User__r.Manager.FirstName&amp;&quot; &quot;&amp;Matching_User__r.Manager.LastName),&quot;Not an Internal Contact&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The manager of the internal user</inlineHelpText>
+        <label>Manager</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Matching_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The User this contact was created for</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The User this contact was created for</inlineHelpText>
+        <label>Matching User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>

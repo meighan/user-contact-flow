@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Location</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Chicago, IL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco, CA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seattle, WA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+</CustomObject>

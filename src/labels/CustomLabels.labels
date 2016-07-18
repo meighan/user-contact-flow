@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CompetitorUpdateRequest</fullName>
+        <categories>id competitor</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CompetitorUpdateRequest</shortDescription>
+        <value>00X1a000000QVoK</value>
+    </labels>
+    <labels>
+        <fullName>DefaultInternalAccount</fullName>
+        <categories>flow,setting,internal,account</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Default Internal Account</shortDescription>
+        <value>&apos;&apos;</value>
+    </labels>
+    <labels>
+        <fullName>DocumentsPrefix</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DocumentsPrefix</shortDescription>
+        <value>/servlet/servlet.FileDownload?file=</value>
+    </labels>
+    <labels>
+        <fullName>ServerInstance</fullName>
+        <categories>Validation Rules, Custom Links, Fields, server, session</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ServerInstance</shortDescription>
+        <value>The Server Instance (na24, emea1, apac1) used in custom links to edit outside of SFDC and in search results.</value>
+    </labels>
+</CustomLabels>
